@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive Single Page Application simulation.">
+  <title>Nova — SPA Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#app-content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="/" data-link aria-label="Nova home">
+      <span class="brand-icon">N</span>
+      Nova<span class="brand-dot">.</span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+      aria-label="Toggle navigation" aria-expanded="false"
+      aria-controls="primary-nav">
+      ☰
+    </button>
+
+    <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
+      <a href="/" data-link>Home</a>
+      <a href="/about" data-link>About</a>
+      <a href="/services" data-link>Services</a>
+      <a href="/contact" data-link>Contact</a>
+    </nav>
+
+    <a class="header-cta" href="/contact" data-link>Get in touch ↗</a>
+  </header>
+
+  <main id="app-content" tabindex="-1">
+    <div class="loading-state">Loading application…</div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="/" data-link>
+      <span class="brand-icon">N</span>
+      Nova<span class="brand-dot">.</span>
+    </a>
+    <p>Built with HTML, CSS and JavaScript.</p>
+    <p>© <span id="year"></span> Nova Studio</p>
+  </footer>
+
+  <noscript>
+    <p class="noscript-message">
+      This application requires JavaScript to display its pages.
+    </p>
+  </noscript>
+</body>
+</html>
